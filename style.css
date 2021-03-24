@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@100&family=Sacramento&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -5,18 +7,51 @@
 }
 body {
   text-align: center;
+  font-family: 'Merriweather', serif;
 }
 .wrapper {
   background-color: lightblue;
 }
 h1 {
-  margin-top: 0;
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+  font-size: 90px;
+}
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5em;
+}
+h3 {
+  font-family: 'Montserrat', sans-serif;
 }
 span {
   text-decoration: underline;
 }
 .top-cloud {
+  position: absolute;
+  top: 50px;
+  right: 210px;
+  transition: transform all 0.8s ease-in-out;
+  cursor: pointer;
 }
 .bottom-cloud {
   position: absolute;
+  bottom: 290px;
+  left: 300px;
+  transition: transform all 0.8s ease-in-out;
+  cursor: pointer;
+}
+.top-container {
+  /* padding: 30px; */
+  padding-top: 100px;
+  position: relative;
+}
+.pro {
+  margin-top: 10px;
+}
+.bottom-cloud:hover {
+  transform: scale(1.5);
+}
+.top-cloud:hover {
+  transform: scale(1.5);
 }
