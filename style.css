@@ -39,6 +39,18 @@ span {
   right: 210px;
   transition: transform all 0.8s ease-in-out;
   cursor: pointer;
+  animation: cloud 12s linear infinite;
+}
+@keyframes cloud {
+  0% {
+    transform: translate(-100px);
+  }
+  50% {
+    transform: translate(50px);
+  }
+  100% {
+    transform: translate(-100px);
+  }
 }
 .bottom-cloud {
   position: absolute;
@@ -46,6 +58,18 @@ span {
   left: 300px;
   transition: transform all 0.8s ease-in-out;
   cursor: pointer;
+  animation: cloud2 12s linear infinite;
+}
+@keyframes cloud2 {
+  0% {
+    transform: translate(100px);
+  }
+  50% {
+    transform: translate(-50px);
+  }
+  100% {
+    transform: translate(100px);
+  }
 }
 .top-container {
   /* padding: 30px; */
